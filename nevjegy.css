@@ -1,0 +1,171 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==== HELPER COLORS FOR LAYOUT ====
+.head {
+	background-color: rgba(140, 96, 255, .3);
+}
+.about {
+	background-color: rgba(25, 0, 0, .3);
+}
+*/
+
+.profile-image {
+	background-color: #806a4b;
+}
+.links {
+	background-color: #806a4b;
+}
+.profilecard {
+  background-color: #ffffff;
+}
+
+/* Basics */
+* {
+	box-sizing: border-box;
+}
+
+/* Positioning */
+.profilecard {
+  width: 480px;
+  max-width: calc(100vw - 10px);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Playfair Display';
+}
+head, .profile-image, .about {
+  width: 90%;
+  margin: 0 auto;
+}
+.profile-image {
+  margin-top: 8vh;
+}
+.head {
+  margin-bottom: 2%;
+  margin-top: 10%;
+}
+.about {
+  margin-bottom: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 2%;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* styling */
+.profile-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+h1, h2 {
+  color: #806a4b;
+  font-size: 6vh;
+  text-transform: uppercase;
+  letter-spacing: 2vh;
+}
+h2 {
+  font-weight: bold;
+}
+.head p {
+  margin-top: 3vh;
+  text-transform: uppercase;
+  font-size: 2vh;
+}
+.dot {
+  height: 3vh;
+  width: 3vh;
+  background-color: #806a4b;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3vh
+}
+.about h3 {
+  color: #806a4b;
+  font-family: 'Mr Dafoe';
+  font-size: 5vh;
+}
+.about p {
+  font-size: 3vh;
+  text-align: justify;
+  margin-top: 2vh;
+  letter-spacing: 2px;
+}
+.profile-image:hover {
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+}
+.links {
+  height: 6vh;
+}
+
+/* Contact links */
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+}
+i {
+  color: #d9d3ca;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+i:hover {
+   color: white;
+   filter: grayscale(10%);
+   transform: scale(1.3);
+   transition: all 0.3s ease-in-out;
+}
